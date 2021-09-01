@@ -64,23 +64,23 @@
 		\item Formally: Let $ \Phi(x) $ be a property provable about objects $ x $ of type $ T $. Then $ \Phi(y) $ should be true for objects $ y $ of type $ S $ where $ S $ is a subtype of $ T $.
 		\item Counter-example: ``If it looks like a duck, quacks like a duck, but needs batteries – you probably have the wrong abstraction"
 		\item Violating the LSP\\
-		Issues\\
+		Issues:\\
 		\begin{minipage}{0.6\textwidth}
 			\begin{itemize}
 				\item Inheriting \textbf{height} and \textbf{width}
 				\item Overriding \textbf{setHeight} and \textbf{setWidth}
 				\item Conflicting assumptions. For example:
 				\begin{Verbatim}
-					void testRectangleArea(Rectangle r){
-						r.setWidth(5);
-						r.setHeight(4);
-						assertEquals(r.computeArea(), 20);
-					}
+	void testRectangleArea(Rectangle r){
+		r.setWidth(5);
+		r.setHeight(4);
+		assertEquals(r.computeArea(), 20);
+	}
 				\end{Verbatim}
 			\end{itemize}
 		\end{minipage}
 		\begin{minipage}{0.3\textwidth}
-			\includegraphics[width=1in]{LSPExample}
+			\hspace*{2cm}\includegraphics[width=1in]{LSPExample}
 		\end{minipage}
 
 		\item Implication: A model, viewed in isolation, cannot be meaningfully validated.

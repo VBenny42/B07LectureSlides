@@ -6,7 +6,7 @@
 \begin{itemize}
 	\item Input and Output (I/O)
 	\begin{itemize}
-		\begin{minipage}[t]{0.3\textwidth}
+		\begin{minipage}[t]{\widthof{Input sources include:} + 1cm}
 			\item Input sources include:
 			\begin{itemize}
 				\item Keyboard
@@ -14,7 +14,7 @@
 				\item Network
 			\end{itemize}
 		\end{minipage}
-		\begin{minipage}[t]{0.5\textwidth}
+		\begin{minipage}[t]{\widthof{Output destinations include:} + 1cm}
 			\item Output destinations include:
 			\begin{itemize}
 				\item Console
@@ -38,11 +38,11 @@
 			\item Typically refers to the keyboard
 			\item Reading data could be done using the \textbf{Scanner} class. Its methods include:
 			\begin{itemize}
-				\begin{minipage}{0.2\textwidth}
+				\begin{minipage}{\widthof{String nextLine()} + 1cm}
 					\item \textbf{String next()}
 					\item \textbf{String nextLine()}
 				\end{minipage}
-				\begin{minipage}{0.4\textwidth}
+				\begin{minipage}{\widthof{double nextDouble()} + 1cm}
 					\item \textbf{int nextInt()}
 					\item \textbf{double nextDouble()}
 				\end{minipage}
@@ -64,12 +64,12 @@
 		\item Constructing a \textbf{File} instance does not create a file on the machine
 		\item Methods include:
 		\begin{itemize}
-			\begin{minipage}[t]{0.3\textwidth}
+			\begin{minipage}[t]{\widthof{\textbf{boolean createNewFile()}} + 1cm}
 				\item \textbf{boolean createNewFile()}
 				\item \textbf{boolean delete()}
 				\item \textbf{boolean exists()}
 			\end{minipage}
-			\begin{minipage}[t]{0.5\textwidth}
+			\begin{minipage}[t]{\widthof{\textbf{boolean isDirectory()}} + 1cm}
 				\item \textbf{boolean isDirectory()}
 				\item \textbf{File [] listFiles()}
 			\end{minipage}
@@ -109,9 +109,9 @@
 		\end{itemize}
 		\item Example
 		\begin{Verbatim}
-			Pattern pattern = Pattern.compile("H.*d");
-			Matcher matcher = pattern.matcher("Hello World");
-			System.out.println(matcher.matches());
+	Pattern pattern = Pattern.compile("H.*d");
+	Matcher matcher = pattern.matcher("Hello World");
+	System.out.println(matcher.matches());
 		\end{Verbatim}
 	\end{itemize}
 

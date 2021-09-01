@@ -17,25 +17,25 @@
 	\begin{itemize}
 		\item Android’s file system consists of six main partitions
 		\begin{itemize}
-			\begin{minipage}[t]{0.15\textwidth}
+			\begin{minipage}[t]{\widthof{\Verb|/system|} + 1cm}
 				\item \Verb|/boot|
 				\item \Verb|/system|
 			\end{minipage}
-			\begin{minipage}[t]{0.15\textwidth}
+			\begin{minipage}[t]{\widthof{\Verb|/recovery|} + 1cm}
 				\item \Verb|/recovery|
 				\item \Verb|/data|
 			\end{minipage}
-			\begin{minipage}[t]{0.15\textwidth}
+			\begin{minipage}[t]{\widthof{\Verb|/cache|} + 1cm}
 				\item \Verb|/cache|
 				\item \Verb|/misc|
 			\end{minipage}
 		\end{itemize}
 		\item Reading/writing data to a file on internal storage can be done using
 		\begin{itemize}
-			\begin{minipage}[t]{0.23\textwidth}
+			\begin{minipage}[t]{\widthof{\Verb|openFileInput()|} + 1cm}
 				\item \Verb|openFileInput()|
 			\end{minipage}
-			\begin{minipage}[t]{0.2\textwidth}
+			\begin{minipage}[t]{\widthof{\Verb|openFileOutput()|} + 1cm}
 				\item \Verb|openFileOutput()|
 			\end{minipage}
 		\end{itemize}
@@ -58,15 +58,15 @@
 
 	\item SQLite
 	\begin{itemize}
-		\begin{minipage}[t]{0.22\textwidth}
+		\begin{minipage}[t]{\widthof{Relational database} + 1cm}
 			\item Relational database
 			\item Serverless
 		\end{minipage}
-		\begin{minipage}[t]{0.22\textwidth}
+		\begin{minipage}[t]{\widthof{Zero-configuration} + 1cm}
 			\item Zero-configuration
 			\item File-based
 		\end{minipage}
-		\begin{minipage}[t]{0.15\textwidth}
+		\begin{minipage}[t]{\widthof{Widely used} + 1cm}
 			\item Widely used
 		\end{minipage}
 	\end{itemize}
@@ -84,11 +84,11 @@
 		\end{itemize}
 		\item The Firebase SDK provides many classes and methods to store and sync data. E.g.
 		\begin{itemize}
-			\begin{minipage}[t]{0.24\textwidth}
+			\begin{minipage}[t]{\widthof{\Verb|DatabaseReference|} + 1cm}
 				\item \Verb|DatabaseReference|
 				\item \Verb|DataSnapshot|
 			\end{minipage}
-			\begin{minipage}[t]{0.22\textwidth}
+			\begin{minipage}[t]{\widthof{\Verb|ValueEventListener|} + 1cm}
 				\item \Verb|ValueEventListener|
 			\end{minipage}
 		\end{itemize}
@@ -101,14 +101,14 @@
 		\item Supported by many programming languages
 		\item Uses readable text to represent data in the form of key/value pairs
 		\item Example \begin{Verbatim}
-			{
-				"name": "Alex”,
-				"age”: 25,
-				"address”: {
-					"country”: "Canada”,
-					"city”: "Toronto”
-				}
-			}
+	{
+		"name": "Alex”,
+		"age”: 25,
+		"address”: {
+			"country”: "Canada”,
+			"city”: "Toronto”
+		}
+	}
 		\end{Verbatim}
 
 	\end{itemize}
