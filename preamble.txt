@@ -1,0 +1,36 @@
+%\ProvidesPackage{B07settings}
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+
+\usepackage{amstext}
+
+\usepackage{amsthm}
+\usepackage{color, fullpage, hyperref}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{commath}
+
+\usepackage{multicol}
+\usepackage{calc}
+
+\usepackage[table]{xcolor}
+\usepackage{makecell}
+
+\usepackage{graphicx}
+\usepackage{tikz, pgfplots, hf-tikz}
+\pgfplotsset{compat=1.17}
+\allowdisplaybreaks
+\renewcommand\qedsymbol{$\blacksquare$}
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+\tcbuselibrary{fitting}
+\usepackage{empheq}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage{fancyvrb}
+
+\graphicspath{{Pictures/}}
+
+\usepackage{datetime}
+\newdate{compiledate}{28}{08}{2021}
+\date{\displaydate{compiledate}}

@@ -1,0 +1,117 @@
+%\input{preamble.txt}
+
+%\begin{document}
+\section{Android -- Storing Data}
+\begin{itemize}
+	\item Data storage options
+	\begin{itemize}
+		\item File system
+		\item Shared preferences
+		\item Databases
+		\begin{itemize}
+			\item e.g. SQLite, Firebase Realtime Database
+		\end{itemize}
+	\end{itemize}
+
+	\item File system
+	\begin{itemize}
+		\item Android’s file system consists of six main partitions
+		\begin{itemize}
+			\begin{minipage}[t]{0.15\textwidth}
+				\item \Verb|/boot|
+				\item \Verb|/system|
+			\end{minipage}
+			\begin{minipage}[t]{0.15\textwidth}
+				\item \Verb|/recovery|
+				\item \Verb|/data|
+			\end{minipage}
+			\begin{minipage}[t]{0.15\textwidth}
+				\item \Verb|/cache|
+				\item \Verb|/misc|
+			\end{minipage}
+		\end{itemize}
+		\item Reading/writing data to a file on internal storage can be done using
+		\begin{itemize}
+			\begin{minipage}[t]{0.23\textwidth}
+				\item \Verb|openFileInput()|
+			\end{minipage}
+			\begin{minipage}[t]{0.2\textwidth}
+				\item \Verb|openFileOutput()|
+			\end{minipage}
+		\end{itemize}
+	\end{itemize}
+
+	\item Shared preferences
+	\begin{itemize}
+		\item Suitable for simple data that could be stored as key/value pairs
+		\item A \textbf{SharedPreferences} object refers to a file containing key/value pairs and provides methods to read and write them
+		\item Creating/accessing shared preference files can be done using:
+		\begin{itemize}
+			\begin{minipage}[t]{0.23\textwidth}
+				\item \Verb|getPreferences()|
+			\end{minipage}
+			\begin{minipage}[t]{0.3\textwidth}
+				\item \Verb|getSharedPreferences()|
+			\end{minipage}
+		\end{itemize}
+	\end{itemize}
+
+	\item SQLite
+	\begin{itemize}
+		\begin{minipage}[t]{0.22\textwidth}
+			\item Relational database
+			\item Serverless
+		\end{minipage}
+		\begin{minipage}[t]{0.22\textwidth}
+			\item Zero-configuration
+			\item File-based
+		\end{minipage}
+		\begin{minipage}[t]{0.15\textwidth}
+			\item Widely used
+		\end{minipage}
+	\end{itemize}
+
+	\item Firebase Realtime Database
+	\begin{itemize}
+		\item Cloud-hosted
+		\item Employs data synchronization
+		\begin{itemize}
+			\item Every time data changes, all connected clients automatically receive updates
+		\end{itemize}
+		\item NoSQL
+		\begin{itemize}
+			\item Data is stored as JSON
+		\end{itemize}
+		\item The Firebase SDK provides many classes and methods to store and sync data. E.g.
+		\begin{itemize}
+			\begin{minipage}[t]{0.24\textwidth}
+				\item \Verb|DatabaseReference|
+				\item \Verb|DataSnapshot|
+			\end{minipage}
+			\begin{minipage}[t]{0.22\textwidth}
+				\item \Verb|ValueEventListener|
+			\end{minipage}
+		\end{itemize}
+	\end{itemize}
+
+	\item JSON
+	\begin{itemize}
+		\item \textbf{J}ava\textbf{S}cript \textbf{O}bject \textbf{N}otation
+		\item Language-independent
+		\item Supported by many programming languages
+		\item Uses readable text to represent data in the form of key/value pairs
+		\item Example \begin{Verbatim}
+			{
+				"name": "Alex”,
+				"age”: 25,
+				"address”: {
+					"country”: "Canada”,
+					"city”: "Toronto”
+				}
+			}
+		\end{Verbatim}
+
+	\end{itemize}
+\end{itemize}
+
+%\end{document}

@@ -1,0 +1,90 @@
+%\input{preamble.txt}
+
+%\begin{document}
+	\section{Android  -- Testing}
+	\begin{itemize}
+		\item Model-View-Presenter
+		\begin{itemize}
+			\vspace{0.2cm}
+			\begin{minipage}[b]{0.65\textwidth}
+				\item An architectural design pattern that results in code that is easier to test
+				\item It consists of three components:
+				\begin{enumerate}
+					\item Model (Data)
+					\item View (UI)
+					\item Presenter (Business logic)
+				\end{enumerate}
+			\end{minipage}
+			\begin{minipage}[t]{0.2\textwidth}
+				\vspace{-3.5cm}
+				\includegraphics[scale=0.6]{MVP.png}
+			\end{minipage}
+		\end{itemize}
+
+		\item Local and Instrumented Tests
+		\begin{itemize}
+			\vspace{0.2cm}
+			\begin{minipage}[b]{0.5\textwidth}
+				\item Local unit tests
+				\begin{itemize}
+					\item Run on the machine’s local JVM
+					\item Do not depend on the Android framework
+				\end{itemize}
+				\item Instrumented tests
+				\begin{itemize}
+					\item Run on an actual device or an emulator
+					\item Usually used for integration and UI tests
+				\end{itemize}
+			\end{minipage}
+			\begin{minipage}[t]{0.4\textwidth}
+				\includegraphics[scale=0.7]{LITests.png}
+			\end{minipage}
+		\end{itemize}
+
+		\item Commonly used tools
+		\begin{itemize}
+			\item JUnit
+			\begin{itemize}
+				\item Writing unit tests
+			\end{itemize}
+			\item Mockito
+			\begin{itemize}
+				\item Creating dummy (mock) objects to facilitate testing a component in
+				isolation
+			\end{itemize}
+			\item Roboelectric
+			\begin{itemize}
+				\item Running tests that involve the Android framework without an emulator or a device
+			\end{itemize}
+			\item Espresso
+			\begin{itemize}
+				\item Writing UI tests
+			\end{itemize}
+		\end{itemize}
+
+		\item Mock Objects
+		\begin{itemize}
+			\item A mock is software component that is used to replace the “real” component during testing
+			\item Mock objects could be used to:
+			\begin{itemize}
+				\item Represent components that have not yet been implemented
+				\item Speed up testing
+				\item Reduce the cost
+				\item Avoid unrecoverable actions
+				\item Etc.
+			\end{itemize}
+		\end{itemize}
+
+		\item Mockito
+		\begin{itemize}
+			\item A mocking framework for Java
+			\item Features include:
+			\begin{itemize}
+				\item Creating mocks
+				\item Stubbing
+				\item Verifying behavior
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+
+%\end{document}

@@ -1,0 +1,175 @@
+\section{Object Oriented Programming (1)}
+\begin{itemize}
+	\item Object-Oriented Thinking
+	\begin{itemize}
+		\item Procedural paradigm
+		\begin{itemize}
+			\item Focuses on designing methods
+			\item Data and operations on the data are separate
+		\end{itemize}
+		\item Object-oriented paradigm
+		\begin{itemize}
+			\item Couples methods and data together into objects
+			\item Organizes programs in a way that mirrors the real world
+			\item A program can be viewed as a collection of cooperating objects
+			\item Makes programs easier to develop and maintain
+			\item Improves software reusability
+		\end{itemize}
+	\end{itemize}
+
+	\item Inheritance
+	\begin{itemize}
+		\item Powerful feature for reusing software
+		\item Helps avoid redundancy
+		\item Different objects might have common properties and behaviors
+		\begin{itemize}
+			\item e.g. Person, Employee
+		\end{itemize}
+		\item Inheritance allows developers to
+		\begin{itemize}
+			\item Define a general class (or superclass). E.g. Person
+			\item Extend the general class to a specialized class (or subclass). e.g. Employee
+		\end{itemize}
+		\item In Java, the keyword extends is used to indicate inheritance
+	\end{itemize}
+
+	\item Casting objects and the \textit{\textbf{instanceof}} operator
+	\begin{itemize}
+		\item It is always possible to cast an instance of a subclass to a variable of a superclass (known as upcasting)
+		\begin{itemize}
+			\item e.g. \textbf{Person p = new Employee();}
+		\end{itemize}
+		\item When casting an instance of a superclass to a variable of its subclass (known as \textit{downcasting}), explicit casting must be used
+		\begin{itemize}
+			\item e.g. \textbf{Person p = new Employee(); Employee e = (Employee)p;}
+			\item If the superclass object is not an instance of the subclass, a runtime error occurs
+			\item  It is a good practice to ensure that the object is an instance of another object before attempting a casting. This can be accomplished by using the \textit{\textbf{instanceof}} operator
+		\end{itemize}
+		\item Cating an object reference does not create a new object
+	\end{itemize}
+
+	\item Overloading and Overriding
+	\begin{itemize}
+		\item Overloading
+		\begin{itemize}
+			\item Defining methods having the same name but different signatures
+			\begin{itemize}
+				\item Signature: method name + types of its formal parameters
+			\end{itemize}
+			\item Overloading methods can make programs clearer and more readable
+		\end{itemize}
+		\item Overriding
+		\begin{itemize}
+			\item Defining a method in the subclass using the same signature and the same
+			return type as in its superclass
+			\item The \textbf{\textit{@Override}} annotation helps avoid mistakes
+			\item A static method \textit{cannot} be overridden (it can be invoked using the syntax\\
+			SuperClassName.staticMethodName)
+		\end{itemize}
+	\end{itemize}
+
+	\item The \textbf{\textit{super}} keyword
+	\begin{itemize}
+		\item Refers to the superclass
+		\item Can be used to invoke a superclass constructor
+		\begin{itemize}
+			\item Syntax: \textbf{\textit{super}}() or \textbf{\textit{super}}(parameters)
+			\item  Must be the first statement of the subclass constructor
+			\item  A constructor may invoke an overloaded constructor or its superclass constructor. If neither is invoked explicitly, the compiler automatically puts super() as the first statement in the constructor
+			\item  If a class is designed to be extended, it is better to provide a no-argument constructor to avoid programming errors
+		\end{itemize}
+		\item Can be used to invoke a superclass method
+		\begin{itemize}
+			\item Syntax: \textbf{\textit{super}.methodName}(parameters)
+			\item Useful in the case of overridden methods
+		\end{itemize}
+	\end{itemize}
+
+%	\newpage
+	\item The \textbf{\textit{Object}} class
+	\begin{itemize}
+		\item Every Java class has \textbf{\textit{Object}} as superclass
+		\item It has methods that are usually overwritten
+		\begin{itemize}
+			\item \textbf{\textit{equals}}
+			\item \textbf{\textit{hashCode }}
+			\item \textbf{\textit{toString}}
+		\end{itemize}
+		\item \textbf{\textit{equals}} method
+		\begin{itemize}
+			\item Header: \textbf{\textit{boolean equals(Object obj)}}
+			\item The implementation provided by the \textbf{\textit{Object}} class checks whether two reference variables point to the same object
+			\begin{itemize}
+				\item 	Does not check ``logical equality"
+			\end{itemize}
+		\end{itemize}
+		\item \textbf{\textit{hashCode}} method
+		\begin{itemize}
+			\item  Header: \textbf{\textit{int hashCode()}}
+			\item  The implementation provided by the \textbf{\textit{Object}} class returns the memory address of the object
+			\item The \textbf{\textit{hashCode}} method should be overridden in every class that overrides \textbf{\textit{equals}}
+			\begin{itemize}
+				\item Equal objects must have equal hash codes
+			\end{itemize}
+			\item A good hashCode method tends to produce unequal hash
+			codes for unequal objects
+		\end{itemize}
+		\item \textbf{\textit{toString}} method
+		\begin{itemize}
+			\item Header: \textbf{\textit{String toString()}}
+			\item The \textbf{\textit{toString}} method is automatically invoked when an object is passed to \textbf{\textit{println}} and the string concatenation operator
+			\item Class \textbf{\textit{Object}} provides an implementation of the \textbf{\textit{toString}} method that returns a string consisting of the class name followed by an “at” sign (@) and the unsigned hexadecimal representation of the hash code
+			\item \textbf{\textit{toString }}is usually overridden so that it returns a descriptive string representation of the object
+		\end{itemize}
+	\end{itemize}
+
+
+	\item Polymorphism
+	\begin{itemize}
+		\item Every instance of a subclass is also an instance of its superclass, but not vice versa
+		\item Polymorphism: An object of a subclass can be used wherever its superclass object is used
+		\item Example\\
+		\begin{minipage}{0.3\textwidth}
+			\centering
+			\begin{Verbatim}
+	public class Demo {
+		public static void main(String [] args) {
+			m(new Point(1,2));
+		}
+
+		public static void m(Object x) {
+			System.out.println(x);
+		}
+	}
+			\end{Verbatim}
+		\end{minipage}
+	\end{itemize}
+
+	\item Dynamic Binding
+	\begin{itemize}
+		\item A method can be implemented in several classes along the inheritance chain
+		\item The JVM dynamically binds the implementation of the method at runtime, decided by the actual type of the variable
+		\begin{itemize}
+			\item \textbf{Object x = new Point(1,2);} \hspace{1cm}	//declared type: Object, actual type: Point
+		\end{itemize}
+		\item Dynamic binding works as follows:
+		\begin{itemize}
+			\item Suppose an object x is an instance of classes $ C_1, C_2 $, \ldots , $ C_{n-1} $, and $ C_n, $ where $ C_1 $ is a subclass of $ C_2, C_2 $ is a subclass of $ C_3, $ \ldots , and $ C_{n-1} $ is a subclass of $ C_n, $
+			\item If x invokes a method p, the JVM searches for the implementation of the method p in $ C_1, C_2, \ldots , C_{n-1}, $ and $ C_n $, in this order, until it is found. Once an implementation is found, the search stops and the first-found implementation is invoked
+		\end{itemize}
+	\end{itemize}
+
+	\item Encapsulation
+	\begin{itemize}
+		\item The access control mechanism in Java facilitates encapsulation
+		\item There are four possible access levels for members, listed in order of
+		increasing accessibility:
+		\begin{enumerate}
+			\item \textbf{private} -- The member is accessible only from the top-level class where it is declared
+			\item \textbf{package-private} -- The member is accessible from any class in the package where it is declared (default access)
+			\item \textbf{protected} -- The member is accessible from subclasses of the class where it is declared and from any class in the package where it is declared
+			\item \textbf{public} --  the member is accessible from anywhere
+		\end{enumerate}
+		\item Rule of thumb: \textit{make each member as inaccessible as possible}
+	\end{itemize}
+\end{itemize}

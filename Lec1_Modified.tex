@@ -1,0 +1,171 @@
+\input{preamble.txt}
+\usepackage{multicol}
+
+\begin{document}
+	\section{Version Control}
+
+	\begin{itemize}
+		\item Two flavours of Version Control
+		\begin{itemize}
+			\item Centralized (B07 uses this)
+			\item Decentralized
+		\end{itemize}
+
+		\item Centralised Version
+		\begin{itemize}
+			\item Keep code in a centralized location (the “Repository”)
+			\item Code in repository is the ``Master Copy" (\textbf{\underline{Never}} directly modify)
+			\item Instead make local copies of the repository on each computer you will be working on (working copy)
+			\item When major changes are made to local copy that you want to save, ``commit" change to repo
+			\item Tools allow you to revert to a previous version of the source code (only when commits have occurred)
+		\end{itemize}
+
+		\item Some Terminology
+%		\begin{minipage}[t][0.72in]{0.25\textwidth}
+%			\begin{itemize}
+%				\item Repository/Repo
+%				\item Client program
+%				\item Working copy
+%			\end{itemize}
+%		\end{minipage}
+%		\begin{minipage}[t]{0.4\textwidth}
+%			\begin{itemize}
+%				\item Checkout
+%				\item Commit
+%			\end{itemize}
+%		\end{minipage}
+		\begin{multicols}{4}
+			\begin{itemize}
+				\item Repository/Repo
+				\item Client program
+				\item Working copy
+				\item Checkout
+				\item Commit
+				\item[\phantom{Spacekeeper}]
+			\end{itemize}
+		\end{multicols}
+
+
+		\item Centralized systems include:
+		\begin{itemize}
+			\item \textbf{S}ub\textbf{V}ersio\textbf{n} (\textbf{SVN})
+			\begin{itemize}
+				\item SVN is the successor to \textbf{C}oncurrent \textbf{V}ersions \textbf{S}ystem (\textbf{CVS}), and was built to help fix many issues in CVS
+			\end{itemize}
+			\begin{multicols}{4}
+				\item Git
+				\item Mercurial
+				\item ClearCase
+				\item Perforce
+			\end{multicols}
+		\end{itemize}
+
+		\item SSH and SCP are \textbf{not} version control systems
+		\begin{itemize}
+			\item \textbf{S}ecure \textbf{Sh}ell (SSH) is used to connect to a remote computer and work in a shell on that computer
+			\item \textbf{S}ecure \textbf{C}o\textbf{p}y (SCP) is used to:
+			\begin{itemize}
+				\item Securely copy files from one computer to another
+				\item Transfer a copy of the files but does \textbf{not} version them
+			\end{itemize}
+		\end{itemize}
+
+		\item Version Control – Managing Concurrency
+
+		\emph{When two or more people want to edit the same file at the same time}
+		\begin{itemize}
+			\item Pessimistic concurrency
+			\begin{itemize}
+				\item Only allow one writeable copy of each file
+				\item e.g. Microsoft Visual SourceSafe, Rational ClearCase
+			\end{itemize}
+
+			\item Optimistic concurrency
+			\begin{itemize}
+				\item Allow writes, fix issues afterwards
+				\item Merging
+				\begin{itemize}
+					\item SVN is either able to merge without help from the user, or
+					\item \textit{Conflict}: SVN needs the user to resolve the conflict
+				\end{itemize}
+				\item e.g. Subversion, CVS, Perforce
+			\end{itemize}
+			\newpage
+			\item Optimistic Concurrency – Merging Options
+
+			Select from: \textbf{(p)} postpone, \textbf{(df)} diff-full, \textbf{(e)} edit, \textbf{(mc)} mine-conflict, \textbf{(tc)} theirs-conflict and \textbf{(s)} show all options.\\[-15pt]
+			\begin{center}
+				\begin{minipage}[c]{0.6\textwidth}
+					\begin{itemize}
+						\item[(e) edit] - changed merged file in an editor
+						\item[(df) diff-full] - show all changes made to merged file4
+						\item[(r) resolved]  - accept merged version of file\\
+						\item[(dc) display-conflict] - show all conflicts (ignoring merged version)
+						\item[(mc) mine-conflict] -  accept my version for all conflicts (same as above)
+						\item[(tc) theirs-conflict] -  accept their version for all conflicts (same as above) \\
+						\item[(mf) mine-full] - accept my version of entire file (even non-conflicts)
+						\item[(tf) theirs-full]  - accept my version of entire file (same as above)\\
+						\item[(p) postpone] - mark the conflict to be stored later
+						\item[(l) launch] - launch external tool to resolve conflict
+						\item[(s) show all] - show this list
+					\end{itemize}
+				\end{minipage}
+			\end{center}
+		\end{itemize}
+
+		\item Integrating the code - Reasons for merge conflicts\\[-15pt]
+
+		\begin{minipage}[t]{0.3\textwidth}
+			\begin{itemize}
+				\item Communication
+				\item Complex code bases
+				\item Experimental features being built
+			\end{itemize}
+		\end{minipage}
+		\begin{minipage}[t]{0.5\textwidth}
+			\begin{itemize}
+				\item More than one project on the go that impacts this code
+				\item Two features being built in same class by different developers
+			\end{itemize}
+		\end{minipage}
+
+		\item Branching
+		\begin{itemize}
+			\item Branches are divergent copies of development lines
+			\item These versions are used to build out complex features, or do experiments,
+			without having an impact on the main code line
+			\item Strategies include:
+			\begin{itemize}
+				\item No branching
+				\item Release branching
+				\item Feature branching
+			\end{itemize}
+		\end{itemize}
+
+		\item Storage scheme
+		\begin{itemize}
+			\item Storing every copy of every file generated over the course of a project is not practical
+			\item Version control systems store incremental differences in files/folder structures
+			\item These differences store enough information to re-construct previous versions, without storing every single copy ever made of the file
+		\end{itemize}
+
+		\item What’s Stored Where
+		\begin{itemize}
+			\item Server side: out of scope
+			\item Local copy contains a special directory, \textbf{.svn}
+			\begin{itemize}
+				\item It stores (locally) the information subversion needs to keep track of your files, version numbers, where the repository is, etc.
+				\item Needless to say, you should not mess with the contents of this directory. Let subversion do its job
+			\end{itemize}
+		\end{itemize}
+
+		\item General rules
+		\begin{itemize}
+			\item Update and commit frequently
+			\item Never break the main branch
+			\item Always comment clearly what changes are in a revision
+			\item Test all code before accepting merge
+			\item Communicate with your team!
+		\end{itemize}
+	\end{itemize}
+\end{document}
