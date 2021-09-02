@@ -4,9 +4,9 @@
 \contentsline {section}{\numberline {4}Object Oriented Programming (2)}{11}{section.4}%
 \contentsline {section}{\numberline {5}Software Testing}{14}{section.5}%
 \contentsline {section}{\numberline {6}Design Patterns}{19}{section.6}%
-\contentsline {section}{\numberline {7}SOLID Design}{22}{section.7}%
-\contentsline {section}{\numberline {8}Software Development Life Cycle}{25}{section.8}%
-\contentsline {section}{\numberline {9}I/O and Regular Expressions}{30}{section.9}%
-\contentsline {section}{\numberline {10}Introduction to Android}{32}{section.10}%
-\contentsline {section}{\numberline {11}Android -- Storing Data}{34}{section.11}%
-\contentsline {section}{\numberline {12}Android -- Testing}{35}{section.12}%
+\contentsline {section}{\numberline {7}SOLID Design}{21}{section.7}%
+\contentsline {section}{\numberline {8}Software Development Life Cycle}{24}{section.8}%
+\contentsline {section}{\numberline {9}I/O and Regular Expressions}{29}{section.9}%
+\contentsline {section}{\numberline {10}Introduction to Android}{31}{section.10}%
+\contentsline {section}{\numberline {11}Android -- Storing Data}{33}{section.11}%
+\contentsline {section}{\numberline {12}Android -- Testing}{34}{section.12}%

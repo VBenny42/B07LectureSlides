@@ -9,6 +9,9 @@
 
 \usepackage{multicol}
 \usepackage{calc}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, positioning, arrows.meta, calc, fit}
+\usepackage{verbatimbox}
 
 \usepackage{tcolorbox}
 \tcbuselibrary{theorems}
@@ -29,14 +32,34 @@
 %\renewcommand\cftsubsecdotsep{\cftdot}
 \usepackage[hidelinks]{hyperref}
 
-\title{CSCB07 Lecture Slides}
+\title{CSCB07 Lecture Slides\thanks{Thanks to everyone in the CSCB07 Summer 2021 class.}}
 \author{Vinesh Benny}
+
+
 
 
 \begin{document}
 
 \maketitle
 \tableofcontents
+
+\tikzset{
+	method/.style = {
+		minimum width=3cm,
+		minimum height=0.5cm,
+		draw,
+		align=flush left,
+		text width=2.7cm,
+	},
+	type/.style = {
+		minimum width=3cm,
+		draw,
+		align=center,
+		text width=2.7cm,
+	}
+}
+\tikzset{frame/.style={line width=0.1mm, inner sep=0.9em, draw=#1}}
+\definecolor{MVPBlue}{HTML}{5b9ad5}
 
 \newpage
 \input{Lec1.tex}

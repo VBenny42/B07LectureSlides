@@ -17,7 +17,20 @@
 			\end{minipage}
 			\begin{minipage}[t]{0.2\textwidth}
 				\vspace{-3.5cm}
-				\includegraphics[scale=0.6]{MVP.png}
+%				\includegraphics[scale=0.6]{MVP.png}
+				\scalebox{0.8}{
+					\begin{tikzpicture}
+						\node[type, rounded corners, fill=MVPBlue, text=white] (Presenter) {{\Large Presenter}};
+						\node[type, rounded corners, fill=MVPBlue, text=white] (Model) [above=of Presenter] {{\Large Model}};
+						\node[type, rounded corners, fill=MVPBlue, text=white] (View) [below=of Presenter] {{\Large View}};
+
+						\draw[-Latex, thick] ([xshift=10pt]Presenter.north west) -- ([xshift=10pt]Model.south west) node[left, midway, align=left] {Update \\ Model};
+						\draw[-Latex, thick] ([xshift=10pt]Presenter.south west) -- ([xshift=10pt]View.north west) node[left, midway, align=left] {Update \\ UI};
+
+						\draw[-Latex, thick]  ([xshift=-10pt]View.north east) -- ([xshift=-10pt]Presenter.south east) node[right, midway, align=left] {User \\ Events};
+						\draw[-Latex, thick]  ([xshift=-10pt]Model.south east) -- ([xshift=-10pt]Presenter.north east) node[right, midway, align=left] {Model-change \\ Events};
+					\end{tikzpicture}
+				}
 			\end{minipage}
 		\end{itemize}
 

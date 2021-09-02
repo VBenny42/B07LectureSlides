@@ -176,9 +176,39 @@
 
 
 		\item Example (Control Flow Graph)\\
-		\includegraphics[scale=0.7]{CFG.png}
-	\end{itemize}
+%		\includegraphics[scale=0.7]{CFG.png}
+\begin{verbbox}[\small]
+if (x < y)
+{
+  y = 0;
+  x = x + 1;
+}
+else
+{
+  x = y;
+}
+\end{verbbox}
+		\begin{figure}[t]
+			\centering
+			$\vcenter{\hbox{\theverbbox}}$ \hspace{1in}
+			$\vcenter{\hbox{\begin{tikzpicture}[mycircle/.style={circle, fill=gray!20, draw, very thin}]
+						\node[mycircle] (one) {1};
+						\draw[-{To[length=2mm, width=2mm]}] ([yshift=20pt]one.north) -- (one.north);
 
+						\node[mycircle] (two) [below=0.8cm of one, xshift=-20pt] {2};
+						\node[mycircle] (three) [below=0.8cm of one, xshift=20pt] {3};
+						\draw[-{Straight Barb[length=2mm, width=2mm]}, thick] (one) -- (two) node[left, near start] {$ x < y $};
+						\draw[-{Straight Barb[length=2mm, width=2mm]}, thick] (one) -- (three) node[right, near start] {$ x \geq y $};
+						\node [right=1pt of three] {$ x = y $};
+						\node[align=left] [left=1pt of two] {$ y = 0 $ \\ $ x = x +1 $};
+
+						\node[mycircle, thick] (four) [below=0.7cm of two, xshift=20pt] {4};
+						\draw[-{Straight Barb[length=2mm, width=2mm]}, thick] (two) -- (four);
+						\draw[-{Straight Barb[length=2mm, width=2mm]}, thick] (three) -- (four);
+			\end{tikzpicture}}}$
+		\end{figure}
+	\end{itemize}
+	\newpage
 	\item Logic Coverage
 	\begin{itemize}
 		\item Involves the boolean expressions of the code

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.17)  2 SEP 2021 14:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.17)  2 SEP 2021 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**Lec4_Modified.tex
-(./Lec4_Modified.tex
+**Lec7_Modified.tex
+(./Lec7_Modified.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-03-06> (./preamble.txt
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/article.cls
@@ -982,39 +982,47 @@ put line 308.
 LaTeX Info: Redefining \today on input line 736.
 \dt@a=\toks51
 \dt@b=\toks52
-)) (./Lec4_Modified.aux)
-\openout1 = `Lec4_Modified.aux'.
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen313
+\WF@size=\dimen314
+\c@WF@wrappedlines=\count353
+\WF@box=\box120
+\WF@everypar=\toks53
+Package: wrapfig 2003/01/31  v 3.6
+)
+(./Lec7_Modified.aux)
+\openout1 = `Lec7_Modified.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
-LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count353
-\scratchdimen=\dimen313
-\scratchbox=\box120
-\nofMPsegments=\count354
-\nofMParguments=\count355
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count356
-\MPscratchDim=\dimen314
-\MPnumerator=\count357
-\makeMPintoPDFobject=\count358
-\everyMPtoPDFconversion=\toks54
+\scratchcounter=\count354
+\scratchdimen=\dimen315
+\scratchbox=\box121
+\nofMPsegments=\count355
+\nofMParguments=\count356
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count357
+\MPscratchDim=\dimen316
+\MPnumerator=\count358
+\makeMPintoPDFobject=\count359
+\everyMPtoPDFconversion=\toks55
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1024,8 +1032,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box121
-Package hyperref Info: Link coloring OFF on input line 4.
+\AtBeginShipoutBox=\box122
+Package hyperref Info: Link coloring OFF on input line 3.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1037,14 +1045,14 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count359
+\c@section@level=\count360
 )
-LaTeX Info: Redefining \ref on input line 4.
-LaTeX Info: Redefining \pageref on input line 4.
-LaTeX Info: Redefining \nameref on input line 4.
- (./Lec4_Modified.out) (./Lec4_Modified.out)
+LaTeX Info: Redefining \ref on input line 3.
+LaTeX Info: Redefining \pageref on input line 3.
+LaTeX Info: Redefining \nameref on input line 3.
+ (./Lec7_Modified.out) (./Lec7_Modified.out)
 \@outlinefile=\write7
-\openout7 = `Lec4_Modified.out'.
+\openout7 = `Lec7_Modified.out'.
 
 
 ABD: EveryShipout initializing macros
@@ -1088,60 +1096,139 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.17}).
 (/usr/local/texlive/2020/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2016/01/12
 )
-<Pictures/Interface.png, id=11, 669.50125pt x 186.6975pt>
-File: Pictures/Interface.png Graphic file (type png)
-<use Pictures/Interface.png>
-Package pdftex.def Info: Pictures/Interface.png  used on input line 28.
-(pdftex.def)             Requested size: 468.64769pt x 130.68735pt.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
+ []
+
+<Pictures/SRPViolation.png, id=11, 456.70625pt x 136.51pt>
+File: Pictures/SRPViolation.png Graphic file (type png)
+<use Pictures/SRPViolation.png>
+Package pdftex.def Info: Pictures/SRPViolation.png  used on input line 23.
+(pdftex.def)             Requested size: 294.33894pt x 87.98056pt.
+<Pictures/SRPConform.png, id=13, 383.4325pt x 160.6pt>
+File: Pictures/SRPConform.png Graphic file (type png)
+<use Pictures/SRPConform.png>
+Package pdftex.def Info: Pictures/SRPConform.png  used on input line 27.
+(pdftex.def)             Requested size: 245.27995pt x 102.73708pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
 
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+<Pictures/OCPViolate.png, id=14, 259.97125pt x 55.20625pt>
+File: Pictures/OCPViolate.png Graphic file (type png)
+<use Pictures/OCPViolate.png>
+Package pdftex.def Info: Pictures/OCPViolate.png  used on input line 49.
+(pdftex.def)             Requested size: 108.405pt x 23.02051pt.
+
+Overfull \hbox (74.3749pt too wide) in paragraph at lines 44--51
+[]$[]$ $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+<Pictures/OCPConform.png, id=15, 323.2075pt x 202.7575pt>
+File: Pictures/OCPConform.png Graphic file (type png)
+<use Pictures/OCPConform.png>
+Package pdftex.def Info: Pictures/OCPConform.png  used on input line 57.
+(pdftex.def)             Requested size: 108.40334pt x 68.00229pt.
+
+Overfull \hbox (53.8984pt too wide) in paragraph at lines 53--59
+[]$[]$ $[]$ 
+ []
+
+[1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Pictu
-res/Interface.png>]
-<Pictures/Exceptions.png, id=25, 590.205pt x 149.55875pt>
-File: Pictures/Exceptions.png Graphic file (type png)
-<use Pictures/Exceptions.png>
-Package pdftex.def Info: Pictures/Exceptions.png  used on input line 113.
-(pdftex.def)             Requested size: 413.14067pt x 104.6904pt.
- [2 <./Pictures/Exceptions.png>] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 175.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 175.
- (./Lec4_Modified.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 175.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 175.
-Package rerunfilecheck Info: File `Lec4_Modified.out' has not changed.
-(rerunfilecheck)             Checksum: 2B4A3ECC65C411447009C7FBAC178997;68.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 175.
+res/SRPViolation.png> <./Pictures/SRPConform.png> <./Pictures/OCPViolate.png>]
+<Pictures/LSPExample.png, id=29, 136.51pt x 184.69pt>
+File: Pictures/LSPExample.png Graphic file (type png)
+<use Pictures/LSPExample.png>
+Package pdftex.def Info: Pictures/LSPExample.png  used on input line 83.
+(pdftex.def)             Requested size: 72.26999pt x 97.77812pt.
+<Pictures/ISPViolation.png, id=30, 258.9675pt x 237.88875pt>
+File: Pictures/ISPViolation.png Graphic file (type png)
+<use Pictures/ISPViolation.png>
+Package pdftex.def Info: Pictures/ISPViolation.png  used on input line 101.
+(pdftex.def)             Requested size: 180.67499pt x 165.97649pt.
+<Pictures/ISPObey.png, id=31, 290.08376pt x 234.8775pt>
+File: Pictures/ISPObey.png Graphic file (type png)
+<use Pictures/ISPObey.png>
+Package pdftex.def Info: Pictures/ISPObey.png  used on input line 105.
+(pdftex.def)             Requested size: 252.94499pt x 204.80768pt.
+
+Overfull \hbox (53.8984pt too wide) in paragraph at lines 98--107
+[] [] 
+ []
+
+[2 <./Pictures/LSPExample.png> <./Pictures/OCPConform.png>] [3 <./Pictures/ISPV
+iolation.png> <./Pictures/ISPObey.png>]
+<Pictures/DIPNaive.png, id=46, 254.9525pt x 112.42pt>
+File: Pictures/DIPNaive.png Graphic file (type png)
+<use Pictures/DIPNaive.png>
+Package pdftex.def Info: Pictures/DIPNaive.png  used on input line 122.
+(pdftex.def)             Requested size: 144.54pt x 63.73698pt.
+<Pictures/DIPInverted.png, id=47, 224.84pt x 221.82875pt>
+File: Pictures/DIPInverted.png Graphic file (type png)
+<use Pictures/DIPInverted.png>
+Package pdftex.def Info: Pictures/DIPInverted.png  used on input line 128.
+(pdftex.def)             Requested size: 180.67499pt x 178.26204pt.
+<Pictures/DIPViolate.png, id=48, 345.29pt x 72.27pt>
+File: Pictures/DIPViolate.png Graphic file (type png)
+<use Pictures/DIPViolate.png>
+Package pdftex.def Info: Pictures/DIPViolate.png  used on input line 134.
+(pdftex.def)             Requested size: 144.54pt x 30.25282pt.
+<Pictures/DIPConform.png, id=49, 311.1625pt x 219.82124pt>
+File: Pictures/DIPConform.png Graphic file (type png)
+<use Pictures/DIPConform.png>
+Package pdftex.def Info: Pictures/DIPConform.png  used on input line 138.
+(pdftex.def)             Requested size: 144.54pt x 102.11183pt.
+
+Overfull \hbox (53.8984pt too wide) in paragraph at lines 118--140
+[] [] 
+ []
+
+[4 <./Pictures/DIPNaive.png> <./Pictures/DIPInverted.png> <./Pictures/DIPViolat
+e.png> <./Pictures/DIPConform.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 162.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
+ (./Lec7_Modified.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
+Package rerunfilecheck Info: File `Lec7_Modified.out' has not changed.
+(rerunfilecheck)             Checksum: E2167F47B159C8C52C00F6D022E89327;47.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 162.
  ) 
 Here is how much of TeX's memory you used:
- 32253 strings out of 480608
- 765433 string characters out of 5903630
- 1137665 words of memory out of 5000000
- 47556 multiletter control sequences out of 15000+600000
- 539013 words of font info for 49 fonts, out of 8000000 for 9000
+ 32391 strings out of 480608
+ 767705 string characters out of 5903630
+ 1136897 words of memory out of 5000000
+ 47683 multiletter control sequences out of 15000+600000
+ 539113 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,5n,129p,1051b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 77i,7n,129p,1051b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
 /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr
 /local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on Lec4_Modified.pdf (3 pages, 393265 bytes).
+Output written on Lec7_Modified.pdf (4 pages, 614761 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 99 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

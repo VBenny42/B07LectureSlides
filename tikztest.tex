@@ -4,6 +4,7 @@
 \usepackage{tikz}
 \usepackage{fancyvrb, mdframed, verbatimbox, xcolor}
 \usepackage{arrayjob}
+\usepackage{calc}
 %\usepackage{smartdiagram}
 \usepackage[margin=0.5in]{geometry}
 \usetikzlibrary{shapes.geometric, positioning, arrows.meta, calc, fit}
@@ -16,14 +17,12 @@
 		draw,
 		align=flush left,
 		text width=2.7cm,
-%		rounded corners
 	},
 	type/.style = {
 		minimum width=3cm,
 		draw,
 		align=center,
 		text width=2.7cm,
-%		rounded corners
 	}
 }
 
@@ -438,6 +437,35 @@ else
 				\coordinate (C) at (0,3) {};
 				\foreach \A [count=\i] in {UI Tests, Integration Tests, Unit Tests}
 				\draw[] (C)--([shift={(-.5*\i,0.67*\i)}]B)--node[above,align=center] {\A}([shift={(.5*\i,0.67*\i)}]A)--cycle;
+			\end{tikzpicture}
+		\end{mdframed}
+	\end{figure}
+
+	\begin{figure}[h!]
+		\caption{Strategy}
+		\begin{mdframed}
+			\centering
+			\begin{tikzpicture}
+				\node[type, align=left, text width=1.5in] (strategy) {\textit{\textbf{Strategy}}};
+				\node[method, text width=1.5in] (stratmeth) [below=0pt of strategy] {\textit{AlgorithmInterface()}};
+
+				\node[type, text width=1.5in] (stratb) [below=of stratmeth] {\textbf{ConcreteStrategyB}};
+				\node[method, text width=1.5in] () [below=0pt of stratb] {AlgorithmInterface()};
+
+				\node[type, text width=1.5in] (stratc) [right=of stratb] {\textbf{ConcreteStrategyC}};
+				\node[method, text width=1.5in] () [below=0pt of stratc] {AlgorithmInterface()};
+
+				\node[type, text width=1.5in] (strata) [left=of stratb] {\textbf{ConcreteStrategyA}};
+				\node[method, text width=1.5in] () [below=0pt of strata] {AlgorithmInterface()};
+
+				\node[type, text width=1.5in] (context) [left=2.3in of strategy] {\textbf{Context}};
+				\node[method, text width=1.5in] () [below=0pt of context] {ContextInterface()};
+
+				\draw[-{Triangle[open, length=1.5mm, scale=2]}] (stratb.north) -- ([yshift=19.5pt]stratb.north);
+				\draw (strata.north) |- ([yshift=11pt]stratb.north) -| (stratc.north);
+				\draw ([yshift=19pt]stratb.north) -- (stratmeth);
+
+				\draw[-{Diamond[open, scale=2]}] (strategy) -- (context) node[above, pos=0.8] () {{\small strategy}};
 			\end{tikzpicture}
 		\end{mdframed}
 	\end{figure}

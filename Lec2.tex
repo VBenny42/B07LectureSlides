@@ -34,7 +34,33 @@
 			\item Each step is executed immediately after it is translated\\[-21pt]
 		\end{itemize}
 	\end{enumerate}
-	\includegraphics[scale=.75]{Compile flow.png}\\[-30pt]
+%	\includegraphics[scale=.75]{Compile flow.png}\\[-30pt]
+	\begin{figure}[h!]
+		\centering
+		\scalebox{0.8}{\begin{tikzpicture}
+			\node[type] (welcome) {Welcome.java \\ (Java Source- \\ code file)};
+			\node[type] (compiler) [right=2cm of welcome] {Java \\ Compiler};
+			\node[type] (welcomeclass) [right=2cm of compiler] {Welcome.class \\ (Java bytecode \\ executable file)};
+			\node[type] (jvm) [right=2cm of welcomeclass] {JVM};
+			\node[type] (library) [below=of welcomeclass] {Library Code};
+
+			\draw[very thick, -Latex] (welcome) -- (compiler)
+			node[above, align=center, midway] {
+				compiled\\
+				by
+			};
+			\draw[very thick, -Latex] (compiler) -- (welcomeclass)
+			node[above, align=center, midway] {
+				generates
+			};
+			\draw[very thick, -Latex] ([yshift=4.5pt]welcomeclass.east) -- ([yshift=-3pt]jvm.north west)
+			node[above, align=center, midway] {
+				executed\\
+				by
+			};
+			\draw[very thick, -Latex] (library.east) -- +(1,0) |-  ([yshift=3pt]jvm.south west);
+		\end{tikzpicture}}
+	\end{figure}
 
 	\item Integrated Development Environment
 	\begin{itemize}
