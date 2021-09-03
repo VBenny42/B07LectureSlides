@@ -18,7 +18,7 @@
 \tcbuselibrary{fitting}
 \usepackage{array}
 
-\usepackage[margin=0.5in]{geometry}
+\usepackage{geometry}
 \usepackage{fancyvrb}
 
 \graphicspath{{Pictures/}}
@@ -33,6 +33,20 @@
 %\renewcommand\cftsubsecdotsep{\cftdot}
 \usepackage[hidelinks]{hyperref}
 
+\geometry{
+	margin=0.5in,
+	bottom=0.6in
+}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\rfoot{\thepage}
+
+\renewcommand{\headrulewidth}{0pt}
+
 \title{CSCB07 Lecture Slides\thanks{Thanks to everyone in the CSCB07 Summer 2021 class.}}
 \author{Vinesh Benny}
 
@@ -43,6 +57,7 @@
 
 \maketitle
 \tableofcontents
+\thispagestyle{empty}
 
 \tikzset{
 	method/.style = {
@@ -63,6 +78,8 @@
 \definecolor{MVPBlue}{HTML}{5b9ad5}
 
 \newpage
+\clearpage
+\pagenumbering{arabic}
 \input{Lec1.tex}
 \newpage
 \input{Lec2.tex}
