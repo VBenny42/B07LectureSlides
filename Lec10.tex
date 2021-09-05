@@ -67,16 +67,65 @@
 		\begin{itemize}
 			\item e.g. Button, EditText, ImageView, etc.
 		\end{itemize}
-		\includegraphics[scale=0.7]{View.png}
+%		\includegraphics[scale=1]{View.png}
+		\scalebox{0.7}{
+			\begin{tikzpicture}
+				\node[type, text width=2in] (head) {android.view.View};
+				\node[method, text width=2in] (headtype) [below=0pt of head] {...};
+
+				\node[type, text width=2in] (tv) [below=of headtype.south west, xshift=-0.5in] {android.widget.TextView};
+				\node[method, text width=2in] (tvtype) [below=0pt of tv] {...};
+
+				\node[type, text width=2in] (sp) [below=of headtype.south east, xshift=0.5in] {android.widget.spinner};
+				\node[method, text width=2in] () [below=0pt of sp] {...};
+
+				\node[type, text width=2in] (et) [below=of tv.south west, xshift=-0.1in] {android.widget.EditText};
+				\node[method, text width=2in] () [below=0pt of et] {...};
+
+				\node[type, text width=2in] (bt) [below=of tv.south east, xshift=0.1in] {android.widget.Button};
+				\node[method, text width=2in] () [below=0pt of bt] {...};
+
+				\draw[-{Triangle[open, width=2.5mm, scale=1.8]}] ([xshift=0.8in]tv.north) -- ([xshift=-0.75in]headtype.south);
+				\draw[-{Triangle[open, width=2.5mm, scale=1.8]}] ([xshift=-0.8in]sp.north) -- ([xshift=0.75in]headtype.south);
+
+				\draw[-{Triangle[open, width=2.5mm, scale=1.8]}] ([xshift=0.5in]et.north) -- ([xshift=-0.654in]tvtype.south);
+				\draw[-{Triangle[open, width=2.5mm, scale=1.8]}] ([xshift=-0.5in]bt.north) -- ([xshift=0.654in]tvtype.south);
+			\end{tikzpicture}
+		}
 	\end{itemize}
 
 	\newpage
 	\item View Group
 	\begin{itemize}
 		\item A special type of view that can contain other views
-		\item A layout is a type of view group\\
-		\includegraphics[scale=0.7]{ViewGroup.png}
+		\item A layout is a type of view group
+%		\includegraphics[scale=0.7]{ViewGroup.png}
 	\end{itemize}
+		\scalebox{0.8}{
+			\begin{tikzpicture}
+				\node[type, text width=2in] (vg) {android.view.ViewGroup};
+				\node[method, text width=2in] (vgtype) [below=0pt of vg] {...};
+
+				\node[method, text width=2in] (vtype) [above=of vg] {...};
+				\node[type, text width=2in] (v) [above=0pt of vtype] {android.view.View};
+
+				\node[type] (ll) [below=of vgtype] {android.widget. \\ LinearLayout};
+				\node[method] () [below=0pt of ll] {...};
+
+				\node[type] (gl) [left=15pt of ll] {android.widget. \\ GridLayout};
+				\node[method] () [below=0pt of gl] {...};
+
+				\node[type] (rl) [right=15pt of ll] {android.widget. \\ RelativeLayout};
+				\node[method] () [below=0pt of rl] {...};
+
+				\draw[-{Triangle[open, width=2.5mm, scale=1.8]}] (vg) -- (vtype);
+				\draw[-{Triangle[open, width=2.5mm, scale=1.8]}] (ll) -- (vgtype);
+
+				\draw[-{Triangle[open, width=2.5mm, scale=1.8]}] ([xshift=-8pt]gl.north east) -- ([xshift=10.3pt]vgtype.south west);
+				\draw[-{Triangle[open, width=2.5mm, scale=1.8]}] ([xshift=8pt]rl.north west) -- ([xshift=-10.3pt]vgtype.south east);
+			\end{tikzpicture}
+		}
+
 
 	\item Common GUI compnents
 	\begin{itemize}

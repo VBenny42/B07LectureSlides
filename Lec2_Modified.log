@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.17)  31 AUG 2021 16:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.17)  5 SEP 2021 13:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -841,8 +841,38 @@ Package: xparse 2020-03-06 L3 Experimental document command parser
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count312
 ))
-(/usr/local/texlive/2020/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2019/11/15 version 4.22 text color boxes
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
+meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowinset=\dimen292
+\pgfarrowlength=\dimen293
+\pgfarrowwidth=\dimen294
+\pgfarrowlinewidth=\dimen295
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2020/texmf-dist/tex/latex/verbatimbox/verbatimbox.sty
+Package: verbatimbox 2014/03/12 v3.13 Routines for placing verbatim text into b
+oxes, useful in places where the verbatim environment is inaccessible. Secondar
+ily, for adding vertical buffer around an object.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
@@ -850,23 +880,62 @@ Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks47
 \verbatim@in@stream=\read3
 )
+(/usr/local/texlive/2020/texmf-dist/tex/latex/readarray/readarray.sty
+Package: readarray 2016/11/07\ 2.0\ Routines for inputting 2D and 3D array data
+ and recalling it on an element-by-element basis.
+
+(/usr/local/texlive/2020/texmf-dist/tex/generic/listofitems/listofitems.sty
+(/usr/local/texlive/2020/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_cnt_foreach_nest=\count313
+\loi_nestcnt=\count314
+)
+Package: listofitems 2019/08/21 v1.63 Grab items in lists using user-specified 
+sep char (CT)
+)
+\c@@index=\count315
+\c@@plane=\count316
+\c@@row=\count317
+\c@@col=\count318
+\c@use@args=\count319
+\c@@record=\count320
+\c@arg@index=\count321
+\c@break@count=\count322
+\c@index@count=\count323
+\c@loop@count=\count324
+\Arg@toks=\toks48
+\@arrayident@toks=\toks49
+\rdar@file=\read4
+
+readarray: bounds checking OFF
+)
+\savedverbbox=\box109
+\c@VerbboxLineNo=\count325
+\boxtopsep=\dimen296
+\boxbottomsep=\dimen297
+\ps@tempdima=\dimen298
+\ps@tempboxa=\box110
+\boxtop@sep=\skip66
+\boxbottom@sep=\skip67
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2019/11/15 version 4.22 text color boxes
+
 (/usr/local/texlive/2020/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\tcb@titlebox=\box109
-\tcb@upperbox=\box110
-\tcb@lowerbox=\box111
-\tcb@phantombox=\box112
-\c@tcbbreakpart=\count313
-\c@tcblayer=\count314
-\tcolorbox@number=\count315
-\tcb@temp=\box113
-\tcb@temp=\box114
+\tcb@titlebox=\box111
+\tcb@upperbox=\box112
+\tcb@lowerbox=\box113
+\tcb@phantombox=\box114
+\c@tcbbreakpart=\count326
+\c@tcblayer=\count327
+\tcolorbox@number=\count328
 \tcb@temp=\box115
 \tcb@temp=\box116
+\tcb@temp=\box117
+\tcb@temp=\box118
 \tcb@out=\write4
 \tcb@record@out=\write5
 )
@@ -874,28 +943,28 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 Library (tcolorbox): 'tcbtheorems.code.tex' version '4.22'
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '4.22'
-\tcbfitdim=\dimen292
-\tcb@lowerfitdim=\dimen293
-\tcb@upperfitdim=\dimen294
-\tcb@cur@hbadness=\count316
+\tcbfitdim=\dimen299
+\tcb@lowerfitdim=\dimen300
+\tcb@upperfitdim=\dimen301
+\tcb@cur@hbadness=\count329
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/mathtools/empheq.sty
 Package: empheq 2017/03/31 v2.15 Emphasizing equations
-\l_EQ_equationtype_int=\count317
-\l_EQ_alignmentmode_int=\count318
-\l_EQ_totalwidth_dim=\dimen295
-\l_EQ_displaywidth_dim=\dimen296
-\l_EQ_temp_linewidth_dim=\dimen297
-\l_EQ_linewidth_dim=\dimen298
-\EmphEqdelimitershortfall=\dimen299
-\EmphEqdelimiterfactor=\count319
-\g_EQ_toptag_height_dim=\dimen300
-\g_EQ_bottomtag_depth_dim=\dimen301
-\g_EQ_toprow_height_dim=\dimen302
-\g_EQ_bottomrow_depth_dim=\dimen303
-\g_EQ_widesttag_dim=\dimen304
-\EQ_mathdisplay_box=\box117
-\EQ_tag_box=\box118
-\g_EQ_temprow_int=\count320
+\l_EQ_equationtype_int=\count330
+\l_EQ_alignmentmode_int=\count331
+\l_EQ_totalwidth_dim=\dimen302
+\l_EQ_displaywidth_dim=\dimen303
+\l_EQ_temp_linewidth_dim=\dimen304
+\l_EQ_linewidth_dim=\dimen305
+\EmphEqdelimitershortfall=\dimen306
+\EmphEqdelimiterfactor=\count332
+\g_EQ_toptag_height_dim=\dimen307
+\g_EQ_bottomtag_depth_dim=\dimen308
+\g_EQ_toprow_height_dim=\dimen309
+\g_EQ_bottomrow_depth_dim=\dimen310
+\g_EQ_widesttag_dim=\dimen311
+\EQ_mathdisplay_box=\box119
+\EQ_tag_box=\box120
+\g_EQ_temprow_int=\count333
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -903,26 +972,26 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count321
-\Gm@cntv=\count322
-\c@Gm@tempcnt=\count323
-\Gm@bindingoffset=\dimen305
-\Gm@wd@mp=\dimen306
-\Gm@odd@mp=\dimen307
-\Gm@even@mp=\dimen308
-\Gm@layoutwidth=\dimen309
-\Gm@layoutheight=\dimen310
-\Gm@layouthoffset=\dimen311
-\Gm@layoutvoffset=\dimen312
-\Gm@dimlist=\toks48
+\Gm@cnth=\count334
+\Gm@cntv=\count335
+\c@Gm@tempcnt=\count336
+\Gm@bindingoffset=\dimen312
+\Gm@wd@mp=\dimen313
+\Gm@odd@mp=\dimen314
+\Gm@even@mp=\dimen315
+\Gm@layoutwidth=\dimen316
+\Gm@layoutheight=\dimen317
+\Gm@layouthoffset=\dimen318
+\Gm@layoutvoffset=\dimen319
+\Gm@dimlist=\toks50
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2020/01/13 v3.5 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count324
-\FV@InFile=\read4
-\FV@TabBox=\box119
-\c@FancyVerbLine=\count325
-\FV@StepNumber=\count326
+\FV@CodeLineNo=\count337
+\FV@InFile=\read5
+\FV@TabBox=\box121
+\c@FancyVerbLine=\count338
+\FV@StepNumber=\count339
 \FV@OutFile=\write6
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/datetime/datetime.sty
@@ -936,10 +1005,10 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2020/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks49
-\XKV@tempa@toks=\toks50
+\XKV@toks=\toks51
+\XKV@tempa@toks=\toks52
 )
-\XKV@depth=\count327
+\XKV@depth=\count340
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2020/texmf-dist/tex/latex/fmtcount/fcprefix.sty
@@ -947,111 +1016,96 @@ Package: fcprefix 2012/09/28
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
 Package: fcnumparser 2017/06/15
-\fc@digit@counter=\count328
+\fc@digit@counter=\count341
 ))
-\c@padzeroesN=\count329
-\fc@tmpcatcode=\count330
-\@DT@modctr=\count331
-\@ordinalctr=\count332
-\@orgargctr=\count333
-\@strctr=\count334
-\@tmpstrctr=\count335
-\@DT@loopN=\count336
-\@DT@X=\count337
+\c@padzeroesN=\count342
+\fc@tmpcatcode=\count343
+\@DT@modctr=\count344
+\@ordinalctr=\count345
+\@orgargctr=\count346
+\@strctr=\count347
+\@tmpstrctr=\count348
+\@DT@loopN=\count349
+\@DT@X=\count350
 )
 (/usr/local/texlive/2020/texmf-dist/tex/latex/datetime/datetime-defaults.sty
 Package: datetime-defaults 2013/09/10
 )
-\@day=\count338
-\@month=\count339
-\@year=\count340
-\c@HOUR=\count341
-\c@HOURXII=\count342
-\c@MINUTE=\count343
-\c@TOHOUR=\count344
-\c@TOMINUTE=\count345
-\c@SECOND=\count346
-\currenthour=\count347
-\currentminute=\count348
-\currentsecond=\count349
+\@day=\count351
+\@month=\count352
+\@year=\count353
+\c@HOUR=\count354
+\c@HOURXII=\count355
+\c@MINUTE=\count356
+\c@TOHOUR=\count357
+\c@TOMINUTE=\count358
+\c@SECOND=\count359
+\currenthour=\count360
+\currentminute=\count361
+\currentsecond=\count362
 Package datetime Info: No datetime.cfg file found, using default settings on in
 put line 308.
-\@dtctr=\count350
-\dayofyear=\count351
-\dayofweek=\count352
+\@dtctr=\count363
+\dayofyear=\count364
+\dayofweek=\count365
 LaTeX Info: Redefining \today on input line 736.
-\dt@a=\toks51
-\dt@b=\toks52
-)) (/usr/local/texlive/2020/texmf-dist/tex/latex/vwcol/vwcol.sty
-Package: vwcol 2015/02/10 v0.2 Variable-width multicolumn text
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/ragged2e/ragged2e.sty
-Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
-
-(/usr/local/texlive/2020/texmf-dist/tex/latex/ms/everysel.sty
-Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+\dt@a=\toks53
+\dt@b=\toks54
+)) (/usr/local/texlive/2020/texmf-dist/tex/latex/tools/hhline.sty
+Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
 )
-\CenteringLeftskip=\skip66
-\RaggedLeftLeftskip=\skip67
-\RaggedRightLeftskip=\skip68
-\CenteringRightskip=\skip69
-\RaggedLeftRightskip=\skip70
-\RaggedRightRightskip=\skip71
-\CenteringParfillskip=\skip72
-\RaggedLeftParfillskip=\skip73
-\RaggedRightParfillskip=\skip74
-\JustifyingParfillskip=\skip75
-\CenteringParindent=\skip76
-\RaggedLeftParindent=\skip77
-\RaggedRightParindent=\skip78
-\JustifyingParindent=\skip79
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen320
+\captionmargin@=\dimen321
+\captionwidth=\dimen322
+\caption@tempdima=\dimen323
+\caption@indent=\dimen324
+\caption@parindent=\dimen325
+\caption@hangindent=\dimen326
+Package caption Info: Standard document class detected.
 )
-\vwcol@sep=\skip80
-\vwcol@rule=\skip81
-\vwcol@totalwidth=\skip82
-\vwcol@averagewidth=\skip83
-\vwcol@parindent=\skip84
-\vwcol@last=\count353
-\vwcol@Ncols=\count354
-\vwcol@Nlines=\count355
-\vwcol@maxrecursion=\count356
-\vwcol@box=\box120
-\vwcol@plainbox=\box121
-\vwcol@outputbox=\box122
+\c@caption@flags=\count366
+\c@continuedfloat=\count367
+Package caption Info: hyperref package is loaded.
 )
 (./Lec2_Modified.aux)
 \openout1 = `Lec2_Modified.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 3.
-LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count357
-\scratchdimen=\dimen313
-\scratchbox=\box123
-\nofMPsegments=\count358
-\nofMParguments=\count359
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count360
-\MPscratchDim=\dimen314
-\MPnumerator=\count361
-\makeMPintoPDFobject=\count362
-\everyMPtoPDFconversion=\toks54
+\scratchcounter=\count368
+\scratchdimen=\dimen327
+\scratchbox=\box122
+\nofMPsegments=\count369
+\nofMParguments=\count370
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count371
+\MPscratchDim=\dimen328
+\MPnumerator=\count372
+\makeMPintoPDFobject=\count373
+\everyMPtoPDFconversion=\toks56
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1061,8 +1115,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box124
-Package hyperref Info: Link coloring OFF on input line 3.
+\AtBeginShipoutBox=\box123
+Package hyperref Info: Link coloring OFF on input line 24.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1074,11 +1128,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count363
+\c@section@level=\count374
 )
-LaTeX Info: Redefining \ref on input line 3.
-LaTeX Info: Redefining \pageref on input line 3.
-LaTeX Info: Redefining \nameref on input line 3.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
  (./Lec2_Modified.out) (./Lec2_Modified.out)
 \@outlinefile=\write7
 \openout7 = `Lec2_Modified.out'.
@@ -1125,60 +1179,67 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.17}).
 (/usr/local/texlive/2020/texmf-dist/tex/latex/fmtcount/fc-english.def
 File: fc-english.def 2016/01/12
 )
-ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 3.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
-
- []
-
-<Pictures/Compile flow.png, id=11, 550.055pt x 126.4725pt>
-File: Pictures/Compile flow.png Graphic file (type png)
-<use Pictures/Compile flow.png>
-Package pdftex.def Info: Pictures/Compile flow.png  used on input line 45.
-(pdftex.def)             Requested size: 412.54024pt x 94.85413pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--46
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 121
+.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 121
+.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Pictu
-res/Compile flow.png>] [2]
-<Pictures/array.png, id=36, 336.25626pt x 135.50626pt>
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<Pictures/array.png, id=34, 336.25626pt x 135.50626pt>
 File: Pictures/array.png Graphic file (type png)
 <use Pictures/array.png>
-Package pdftex.def Info: Pictures/array.png  used on input line 211.
+Package pdftex.def Info: Pictures/array.png  used on input line 247.
 (pdftex.def)             Requested size: 302.62782pt x 121.95448pt.
- [3 <./Pictures/array.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 214.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 214.
+LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
+289.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 289.
+
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 289.
+
+
+Overfull \hbox (12.97037pt too wide) in paragraph at lines 246--292
+[]$ $[]$ $[]$ 
+ []
+
+[3 <./Pictures/array.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 294.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 294.
  (./Lec2_Modified.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 214.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 214.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 294.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 294.
 Package rerunfilecheck Info: File `Lec2_Modified.out' has not changed.
 (rerunfilecheck)             Checksum: 00D139C66024416F7D7F40695A925CD5;55.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 214.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 294.
  ) 
 Here is how much of TeX's memory you used:
- 32413 strings out of 480608
- 768457 string characters out of 5903630
- 1144003 words of memory out of 5000000
- 47702 multiletter control sequences out of 15000+600000
+ 34739 strings out of 480608
+ 816696 string characters out of 5903630
+ 1208761 words of memory out of 5000000
+ 49995 multiletter control sequences out of 15000+600000
  539113 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 77i,11n,129p,1051b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 77i,11n,129p,1051b,823s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
@@ -1190,10 +1251,10 @@ local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/lo
 cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/loc
 al/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on Lec2_Modified.pdf (3 pages, 299917 bytes).
+Output written on Lec2_Modified.pdf (3 pages, 222124 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
- 8 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 79 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,9 +1,12 @@
 \documentclass[11pt]{article}
+%\usepackage{fourier}
 
 \usepackage{color, fullpage}
 
 \usepackage[table]{xcolor}
 \usepackage{makecell}
+%\usepackage{booktabs}
+\usepackage{hhline}
 
 \usepackage{graphicx}
 
@@ -24,7 +27,7 @@
 \graphicspath{{Pictures/}}
 
 \usepackage{datetime}
-\newdate{date}{28}{08}{2021}
+\newdate{date}{5}{09}{2021}
 \date{\displaydate{date}}
 
 \usepackage{tocloft}
@@ -49,12 +52,11 @@
 
 \title{CSCB07 Lecture Slides\thanks{Thanks to everyone in the CSCB07 Summer 2021 class.}}
 \author{Vinesh Benny}
-
+\renewcommand{\familydefault}{\sfdefault}
 
 
 
 \begin{document}
-
 \maketitle
 \tableofcontents
 \thispagestyle{empty}

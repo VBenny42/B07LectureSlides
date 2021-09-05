@@ -1,7 +1,27 @@
 \input{preamble.txt}
-\usepackage{vwcol}
-\begin{document}
 
+\tikzset{
+	method/.style = {
+		minimum width=3cm,
+		minimum height=0.5cm,
+		draw,
+		align=flush left,
+		text width=2.7cm,
+	},
+	type/.style = {
+		minimum width=3cm,
+		draw,
+		align=center,
+		text width=2.7cm,
+	}
+}
+\tikzset{frame/.style={line width=0.1mm, inner sep=0.9em, draw=#1}}
+
+\usepackage{hhline}
+\usepackage{fancyvrb}
+\usepackage{caption}
+
+\begin{document}
 \section{Introduction to Java}
 \begin{itemize}
 
@@ -11,19 +31,14 @@
 		\item Write once, run anywhere (WORA)
 		\item Widely-used in industry
 		\item Used to develop software running on:
-		%				\begin{itemize}
-		%					\item Desktop Computers
-		%					\item Servers
-		%					\item Mobile devices
-		%				\end{itemize}
 		\begin{itemize}
-			\begin{minipage}[t]{0.25\textwidth}
+			\begin{minipage}[t]{\widthof{Desktop Computers} + 1cm}
 				\item Desktop Computers
 			\end{minipage}
-			\begin{minipage}[t]{0.15\textwidth}
+			\begin{minipage}[t]{\widthof{Servers} + 1cm}
 				\item Servers
 			\end{minipage}
-			\begin{minipage}[t]{0.2\textwidth}
+			\begin{minipage}[t]{\widthof{Mobile devices} + 1cm}
 				\item Mobile devices
 			\end{minipage}
 		\end{itemize}
@@ -42,20 +57,46 @@
 			\item Each step is executed immediately after it is translated\\[-21pt]
 		\end{itemize}
 	\end{enumerate}
-	\includegraphics[scale=.75]{Compile flow.png}\\[-30pt]
+%	\includegraphics[scale=.75]{Compile flow.png}\\[-30pt]
+	\begin{figure}[h!]
+		\centering
+		\scalebox{0.8}{\begin{tikzpicture}
+			\node[type] (welcome) {Welcome.java \\ (Java Source- \\ code file)};
+			\node[type] (compiler) [right=2cm of welcome] {Java \\ Compiler};
+			\node[type] (welcomeclass) [right=2cm of compiler] {Welcome.class \\ (Java bytecode \\ executable file)};
+			\node[type] (jvm) [right=2cm of welcomeclass] {JVM};
+			\node[type] (library) [below=of welcomeclass] {Library Code};
+
+			\draw[very thick, -Latex] (welcome) -- (compiler)
+			node[above, align=center, midway] {
+				compiled\\
+				by
+			};
+			\draw[very thick, -Latex] (compiler) -- (welcomeclass)
+			node[above, align=center, midway] {
+				generates
+			};
+			\draw[very thick, -Latex] ([yshift=4.5pt]welcomeclass.east) -- ([yshift=-3pt]jvm.north west)
+			node[above, align=center, midway] {
+				executed\\
+				by
+			};
+			\draw[very thick, -Latex] (library.east) -- +(1,0) |-  ([yshift=3pt]jvm.south west);
+		\end{tikzpicture}}
+	\end{figure}
 
 	\item Integrated Development Environment
 	\begin{itemize}
 		\item A system comprising several tools that facilitate software development and testing
 		\item Popular IDEs:
 		\begin{itemize}
-			\begin{minipage}[t]{0.15\textwidth}
+			\begin{minipage}[t]{\widthof{Eclipse} + 1cm}
 				\item Eclipse
 			\end{minipage}
-			\begin{minipage}[t]{0.15\textwidth}
+			\begin{minipage}[t]{\widthof{NetBeans} + 1cm}
 				\item NetBeans
 			\end{minipage}
-			\begin{minipage}[t]{0.2\textwidth}
+			\begin{minipage}[t]{\widthof{IntelliJ} + 1cm}
 				\item IntelliJ
 			\end{minipage}
 		\end{itemize}
@@ -130,17 +171,12 @@
 	\begin{itemize}
 		\item The default value of a data field is:
 		\begin{itemize}
-			\begin{minipage}[t]{0.25\textwidth}
+			\begin{minipage}[t]{\widthof{\textbf{\textit{null}} for a reference type} + 1cm}
 				\item \textbf{\textit{null}} for a reference type
-			\end{minipage}
-			\begin{minipage}[t]{0.25\textwidth}
-				\item \textbf{0} for a numeric type
-			\end{minipage}
-
-			\begin{minipage}[t]{0.25\textwidth}
 				\item \textbf{false} for a boolean type
 			\end{minipage}
-			\begin{minipage}[t]{0.25\textwidth}
+			\begin{minipage}[t]{\widthof{\textbf{`$\backslash$u0000'} for a char type} + 1cm}
+				\item \textbf{0} for a numeric type
 				\item \textbf{`$\backslash$u0000'} for a char type
 			\end{minipage}
 		\end{itemize}
@@ -208,7 +244,51 @@
 		\end{itemize}
 		\item For a two-dimensional array A, \textbf{A.length} returns the number of rows
 		\item Two-dimensional array examples:\\
-		\includegraphics[scale=0.9]{array.png}
+		\includegraphics[scale=0.9]{array.png}\\
+		\definecolor{Arraycolor}{HTML}{b4ecfc}
+%		\begin{table}[h!]
+%			\centering
+		\begin{minipage}{2.3in}
+			\centering
+				\begin{tabular}{c | c | c | c | c | c |}
+					\multicolumn{1}{c}{\phantom{text}} & \multicolumn{1}{c}{[0]} & \multicolumn{1}{c}{[1]} & \multicolumn{1}{c}{[2]} & \multicolumn{1}{c}{[3]} & \multicolumn{1}{c}{[4]}\\\hhline{~|-----}
+					$ \left[0\right] $ & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0\\\hhline{~|-----}
+					$ \left[1\right] $ & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0\\\hhline{~|-----}
+					$ \left[2\right] $ & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0\\\hhline{~|-----}
+					$ \left[3\right] $ & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0\\\hhline{~|-----}
+					$ \left[4\right] $ & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0\\\hhline{~|-----}
+				\end{tabular}\\
+					\begin{Verbatim}[commandchars=\\\{\}]
+    matrix = \textcolor[HTML]{048cc4}{new int}[\textcolor{blue}{5}][\textcolor{blue}{5}];
+					\end{Verbatim}
+		\end{minipage}
+		\begin{minipage}{2.3in}
+			\centering
+			\begin{tabular}{c | c | c | c | c | c |}
+				\multicolumn{1}{c}{\phantom{text}} & \multicolumn{1}{c}{[0]} & \multicolumn{1}{c}{[1]} & \multicolumn{1}{c}{[2]} & \multicolumn{1}{c}{[3]} & \multicolumn{1}{c}{[4]}\\\hhline{~|-----}
+				$ \left[0\right] $ & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0\\\hhline{~|-----}
+				$ \left[1\right] $ & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0\\\hhline{~|-----}
+				$ \left[2\right] $ & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}7 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0\\\hhline{~|-----}
+				$ \left[3\right] $ & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0\\\hhline{~|-----}
+				$ \left[4\right] $ & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0 & \cellcolor{Arraycolor}0\\\hhline{~|-----}
+			\end{tabular}\\
+			\begin{Verbatim}[commandchars=\\\{\}]
+        matrix[\textcolor{blue}{2}][\textcolor{blue}{1}] = \textcolor{blue}{7};
+			\end{Verbatim}
+		\end{minipage}
+		\begin{minipage}{2.3in}
+			\centering
+			\begin{tabular}{c | c | c | c|}
+				\multicolumn{1}{c}{\phantom{text}} & \multicolumn{1}{c}{[0]} & \multicolumn{1}{c}{[1]} & \multicolumn{1}{c}{[2]}\\\hhline{~|---}
+				$ \left[0\right] $ & \cellcolor{Arraycolor}1 & \cellcolor{Arraycolor}2 & \cellcolor{Arraycolor}3\\\hhline{~|---}
+				$ \left[1\right] $ & \cellcolor{Arraycolor}4 & \cellcolor{Arraycolor}5 & \cellcolor{Arraycolor}6\\\hhline{~|---}
+				$ \left[2\right] $ & \cellcolor{Arraycolor}7 & \cellcolor{Arraycolor}8 & \cellcolor{Arraycolor}9\\\hhline{~|---}
+				$ \left[3\right] $ & \cellcolor{Arraycolor}10 & \cellcolor{Arraycolor}11 & \cellcolor{Arraycolor}12\\\hhline{~|---}
+			\end{tabular}\\
+			\begin{Verbatim}[commandchars=\\\{\}]
+\textcolor[HTML]{048cc4}{int} array = \textcolor{blue}{\{}
+			\end{Verbatim}
+		\end{minipage}
 	\end{itemize}
 \end{itemize}
 \end{document}

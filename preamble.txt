@@ -18,6 +18,9 @@
 
 \usepackage{graphicx}
 \usepackage{tikz, pgfplots, hf-tikz}
+\usetikzlibrary{shapes.geometric, positioning, arrows.meta, calc, fit}
+
+\usepackage{verbatimbox}
 \pgfplotsset{compat=1.17}
 \allowdisplaybreaks
 \renewcommand\qedsymbol{$\blacksquare$}
