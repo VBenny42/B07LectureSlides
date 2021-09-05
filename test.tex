@@ -1,0 +1,109 @@
+\documentclass[11pt]{article}
+%\usepackage{fourier}
+
+\usepackage{color, fullpage}
+
+\usepackage[table]{xcolor}
+\usepackage{makecell}
+\usepackage{hhline}
+
+\usepackage{graphicx}
+
+\usepackage{multicol}
+\usepackage{calc}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, positioning, arrows.meta, calc, fit}
+\usepackage{verbatimbox}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{theorems}
+\tcbuselibrary{fitting}
+\usepackage{array}
+
+\usepackage{geometry}
+\usepackage{fancyvrb}
+%\usepackage{emoji}
+
+\graphicspath{{Pictures/}}
+
+\usepackage{datetime}
+\newdate{date}{5}{09}{2021}
+\date{\displaydate{date}}
+
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
+\renewcommand\cftsecdotsep{\cftdot}
+\usepackage[hidelinks]{hyperref}
+
+\geometry{
+	margin=0.5in,
+	bottom=0.6in
+}
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\rfoot{\thepage}
+
+\renewcommand{\headrulewidth}{0pt}
+
+\title{CSCB07 Lecture Slides\thanks{Thanks to everyone in the CSCB07 Summer 2021 class. Especially Gabriel Vainer, Armando Rojas and Ian Gregory}
+	\author{Vinesh Benny}
+	\renewcommand{\familydefault}{\sfdefault}
+
+
+
+	\begin{document}
+		\maketitle
+		\tableofcontents
+		\thispagestyle{empty}
+
+		\tikzset{
+			method/.style = {
+				minimum width=3cm,
+				minimum height=0.5cm,
+				draw,
+				align=flush left,
+				text width=2.7cm,
+			},
+			type/.style = {
+				minimum width=3cm,
+				draw,
+				align=center,
+				text width=2.7cm,
+			}
+		}
+		\tikzset{frame/.style={line width=0.1mm, inner sep=0.9em, draw=#1}}
+		\definecolor{MVPBlue}{HTML}{5b9ad5}
+
+		\newpage
+		\clearpage
+		\pagenumbering{arabic}
+		\input{Lec1.tex}
+		\newpage
+		\input{Lec2.tex}
+		\newpage
+		\input{Lec3.tex}
+		\newpage
+		\input{Lec4.tex}
+		\newpage
+		\input{Lec5.tex}
+		\newpage
+		\input{Lec6.tex}
+		\newpage
+		\input{Lec7.tex}
+		\newpage
+		\input{Lec8.tex}
+		\newpage
+		\input{Lec9.tex}
+		\newpage
+		\input{Lec10.tex}
+		\newpage
+		\input{Lec11.tex}
+		\newpage
+		\input{Lec12.tex}
+
+	\end{document}
+

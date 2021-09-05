@@ -5,7 +5,6 @@
 
 \usepackage[table]{xcolor}
 \usepackage{makecell}
-%\usepackage{booktabs}
 \usepackage{hhline}
 
 \usepackage{graphicx}
@@ -13,8 +12,9 @@
 \usepackage{multicol}
 \usepackage{calc}
 \usepackage{tikz}
-\usetikzlibrary{shapes.geometric, positioning, arrows.meta, calc, fit}
+\usetikzlibrary{shapes.geometric, positioning, arrows.meta, calc, fit, tikzmark}
 \usepackage{verbatimbox}
+\usepackage{adjustbox}
 
 \usepackage{tcolorbox}
 \tcbuselibrary{theorems}
@@ -23,6 +23,7 @@
 
 \usepackage{geometry}
 \usepackage{fancyvrb}
+\usepackage{listings}
 
 \graphicspath{{Pictures/}}
 
@@ -33,7 +34,6 @@
 \usepackage{tocloft}
 \renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
 \renewcommand\cftsecdotsep{\cftdot}
-%\renewcommand\cftsubsecdotsep{\cftdot}
 \usepackage[hidelinks]{hyperref}
 
 \geometry{
@@ -77,7 +77,30 @@
 	}
 }
 \tikzset{frame/.style={line width=0.1mm, inner sep=0.9em, draw=#1}}
+
 \definecolor{MVPBlue}{HTML}{5b9ad5}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+%Code listing style named "mystyle"
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,
+	breaklines=true,
+	captionpos=b,
+	keepspaces=true,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2
+}
+
+\lstset{style=mystyle}
 
 \newpage
 \clearpage

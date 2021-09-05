@@ -39,22 +39,19 @@
 		\end{itemize}
 		\item Example: \textbf{ArrayList} class
 		\begin{itemize}
-			\item ArrayList$\langle$Integer$\rangle$ A = new ArrayList$\langle$Integer$\rangle$();
-			\item ArrayList$\langle$String$\rangle$ B = new ArrayList$\langle$String$\rangle$();
+			\item ArrayList$<$Integer$>$ A = new ArrayList$<$Integer$>$();
+			\item ArrayList$<$String$>$ B = new ArrayList$<$String$>$();
 		\end{itemize}
 		\item Generic types must be reference types
 		\item Enable error detection at compile time
 		\item The \textbf{Comparable} interface
 		\begin{itemize}
 			\item Defines the \textbf{compareTo} method for comparing objects
-			\item Defined as follows:\\[5pt]
-			\begin{minipage}{0.5\textwidth}
-				\begin{Verbatim}
-					public interface Comparable<T> {
-						public int compareTo(T t);
-					}
+			\item Defined as follows:\begin{Verbatim}
+		public interface Comparable<T> {
+			public int compareTo(T t);
+		}
 				\end{Verbatim}
-			\end{minipage}
 			\item The \textbf{compareTo} method determines the order of the calling object with \textbf{t} and returns a negative integer, zero, or a positive integer if the calling object is less than, equal to, or greater than \textbf{t}
 			\item Many classes implement Comparable (e.g. \textbf{String}, \textbf{Integer})
 		\end{itemize}
@@ -65,7 +62,7 @@
 			array is created, its size is fixed
 			\item Java provides the generic class \textbf{ArrayList} whose size is variable
 			\item Imported using: \textbf{import java.util.ArrayList;}
-			\item Commonly used methods (\textbf{ArrayList<E>})
+			\item Commonly used methods (\textbf{ArrayList$ < $E$ > $})
 			\begin{itemize}
 				\item \textbf{boolean add(E e)}
 				\item \textbf{E get(int index)}
@@ -84,7 +81,7 @@
 			\end{itemize}
 			\item Imported using: \textbf{import java.util.HashSet;}
 			\item Objects added to the hash set should override \textbf{equals} and \textbf{hashCode} properly
-			\item Commonly used methods (\textbf{HashSet$\langle$E$\rangle$})
+			\item Commonly used methods (\textbf{HashSet$<$E$>$})
 			\begin{itemize}
 				\item \textbf{boolean add(E e)}
 				\item \textbf{int size()}
@@ -104,8 +101,67 @@
 
 	\item Exceptions
 	\begin{itemize}
-		\item Example\\
-		\includegraphics[scale=0.7]{Exceptions.png}
+		\item Example\\[\itemsep]
+%		\includegraphics[scale=0.7]{Exceptions.png}\\
+\adjustbox{scale=0.8}{\begin{minipage}{\linewidth}
+			\begin{minipage}{0.28\textwidth}
+				\begin{lstlisting}[language=java, frame=single, escapechar=`]
+main method {
+	...
+	try {
+		...
+		`\tikzmarknode{invoke1}{invoke method1;}`
+		statement1;
+	}
+	catch (Exception1 ex1) {
+		Process ex1;
+	}
+	statement2;
+}
+\end{lstlisting}
+			\end{minipage}
+			\hspace{0.5cm}
+			\begin{minipage}{0.28\textwidth}
+				\begin{lstlisting}[language=java, frame=single, escapechar=`]
+`\tikzmarknode{method1}{method1}` {
+	...
+	try {
+		...
+		`\tikzmarknode{invoke2}{invoke method2;}`
+		statement3;
+	}
+	catch (Exception2 ex2) {
+		Process ex2;
+	}
+	statement4;
+}
+\end{lstlisting}
+			\end{minipage}
+			\hspace{0.5cm}
+			\begin{minipage}{0.28\textwidth}
+				\begin{lstlisting}[language=java, frame=single, escapechar=`]
+`\tikzmarknode{method2}{method2}` {
+	...
+	try {
+		...
+		`\tikzmarknode{invoke3}{invoke method3;}`
+		statement5;
+	}
+	catch (Exception3 ex3) {
+		Process ex3;
+	}
+	statement6;
+}
+\end{lstlisting}
+			\end{minipage}
+
+			\begin{tikzpicture}[remember picture, overlay]
+				\draw[-Latex, shorten >= 1pt] (invoke1.north east) -- (method1.south west);
+				\draw[-Latex, shorten >= 1pt] (invoke2.north east) -- (method2.south west);
+				\draw[-Latex, shorten >= 1pt] (invoke3.north east) -- ([xshift=1in, yshift=0.5in]invoke3.north east) node [right, pos = 1, align=left] {An exception\\ is thrown in\\ \verb|method3|};
+			\end{tikzpicture}
+		\end{minipage}
+		}
 		\item Java has a \textbf{finally} clause that can be used to execute some code regardless of whether an exception occurs or is caught. For example:
 		\begin{Verbatim}
 			try {
