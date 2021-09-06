@@ -455,9 +455,9 @@ else
 			\centering
 			\begin{tikzpicture}[x=2.5cm,y=2cm]
 				\draw[help lines] (-3,-2) grid (3, 2);
-				\coordinate (A) at (-3,-1) {};
-				\coordinate (B) at (3,-1) {};
-				\coordinate (C) at (0,3) {};
+				\coordinate (A) at (-2,-1) {};
+				\coordinate (B) at (2,-1) {};
+				\coordinate (C) at (0,2) {};
 				\foreach \A [count=\i] in {UI Tests, Integration Tests, Unit Tests}
 				\draw[] (C)--([shift={(-.5*\i,0.67*\i)}]B)--node[above,align=center] {\A}([shift={(.5*\i,0.67*\i)}]A)--cycle;
 			\end{tikzpicture}
@@ -608,5 +608,43 @@ main method {
 		\draw[-Latex, shorten >= 1pt] (invoke2.north east) -- (method2.south west);
 		\draw[-Latex, shorten >= 1pt] (invoke3.north east) -- ([xshift=1in, yshift=0.5in]invoke3.north east) node [right, pos = 1, align=left] {An exception\\ is thrown in\\ \verb|method3|};
  	\end{tikzpicture}
+	\end{figure}
+
+	\begin{figure}[h!]
+		\caption{LITests}
+		\begin{mdframed}
+			\definecolor{MVPBlue}{HTML}{5b9ad5}
+			\centering
+			\begin{tikzpicture}
+%				\node[draw,	align=center, regular polygon,	regular polygon sides=3] {UI Tests};
+				\coordinate (A) at (0,1.3) {};
+%				\node at (A) [above=1mm of A] {A};
+				\coordinate (B) at (1.9,0) {};
+%				\node at (B) [above=1mm of B] {B};
+				\coordinate (C) at (-1.9,0) {};
+%				\node at (C) [above=1mm of C] {C};
+				\draw[fill=MVPBlue] (C)--node [above, midway] {{\LARGE \textcolor{white}{UI Tests}}} (B)--(A)--cycle;
+
+				\coordinate (D) at ([yshift=-10pt]C) {};
+%				\node at (D) [above=1mm of D] {D};
+				\coordinate (E) at ([yshift=-10pt]B) {};
+%				\node at (E) [above=1mm of E] {E};
+				\coordinate (F) at ([yshift=-1.3cm, xshift=-1.8cm]D) {};
+%				\node at (F) [above=1mm of F] {F};
+				\coordinate (G) at ([yshift=-1.3cm, xshift=1.8cm]E) {};
+%				\node at (G) [above=1mm of G] {G};
+				\draw[fill=MVPBlue] (F) -- (D) -- (E) -- (G) --node [above, midway] {{\LARGE \textcolor{white}{Integration Tests}}} cycle;
+
+				\coordinate (H) at ([yshift=-10pt]F) {};
+%				\node at (H) [above=1mm of H] {H};
+				\coordinate (I) at ([yshift=-10pt]G) {};
+%				\node at (I) [above=1mm of I] {I};
+				\coordinate (J) at ([yshift=-1.3cm, xshift=-1.8cm]H) {};
+%				\node at (J) [above=1mm of J] {J};
+				\coordinate (K) at ([yshift=-1.3cm, xshift=1.8cm]I) {};
+%				\node at (K) [above=1mm of K] {K};
+				\draw[fill=MVPBlue] (J) -- node [above, midway] {{\LARGE \textcolor{white}{Unit Tests}}} (K) -- (I) -- (H) -- cycle;
+			\end{tikzpicture}
+		\end{mdframed}
 	\end{figure}
 \end{document}

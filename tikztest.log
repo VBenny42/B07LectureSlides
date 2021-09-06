@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.17)  5 SEP 2021 19:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.17)  6 SEP 2021 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -675,20 +675,20 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 (./tikztest.aux)
 \openout1 = `tikztest.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
  ABD: EveryShipout initializing macros
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -750,158 +750,158 @@ e
 
 \c@lstlisting=\count318
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 74.
+ mdframed uses option nobreak mdframed on input line 72.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 74.
+ mdframed uses option nobreak mdframed on input line 72.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 90.
+ mdframed uses option nobreak mdframed on input line 88.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 90.
+ mdframed uses option nobreak mdframed on input line 88.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 99.
+(Font)              <10.95> on input line 97.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 99.
+(Font)              <8> on input line 97.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 99.
+(Font)              <6> on input line 97.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 118.
+ mdframed uses option nobreak mdframed on input line 116.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 118.
+ mdframed uses option nobreak mdframed on input line 116.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 139.
+ mdframed uses option nobreak mdframed on input line 137.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 139.
+ mdframed uses option nobreak mdframed on input line 137.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 156.
+ mdframed uses option nobreak mdframed on input line 154.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 156.
+ mdframed uses option nobreak mdframed on input line 154.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 171.
+ mdframed uses option nobreak mdframed on input line 169.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 171.
+ mdframed uses option nobreak mdframed on input line 169.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (1.56021pt too wide) in paragraph at lines 185--185
+Overfull \hbox (1.56021pt too wide) in paragraph at lines 183--183
  [][] 
  []
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 205.
+ mdframed uses option nobreak mdframed on input line 203.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 205.
+ mdframed uses option nobreak mdframed on input line 203.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 235.
+ mdframed uses option nobreak mdframed on input line 233.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 235.
+ mdframed uses option nobreak mdframed on input line 233.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
-48.
+46.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 248.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 246.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 261.
+ mdframed uses option nobreak mdframed on input line 259.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 261.
+ mdframed uses option nobreak mdframed on input line 259.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (6.85185pt too wide) in paragraph at lines 299--300
+Overfull \hbox (6.85185pt too wide) in paragraph at lines 297--298
  [] 
  []
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 300.
+ mdframed uses option nobreak mdframed on input line 298.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 300.
+ mdframed uses option nobreak mdframed on input line 298.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 334.
+ mdframed uses option nobreak mdframed on input line 332.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 334.
+ mdframed uses option nobreak mdframed on input line 332.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 353.
+ mdframed uses option nobreak mdframed on input line 351.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 353.
+ mdframed uses option nobreak mdframed on input line 351.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 394.
+ mdframed uses option nobreak mdframed on input line 392.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 394.
+ mdframed uses option nobreak mdframed on input line 392.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 407.
+ mdframed uses option nobreak mdframed on input line 405.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 407.
+ mdframed uses option nobreak mdframed on input line 405.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 432.
+ mdframed uses option nobreak mdframed on input line 430.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 432.
+ mdframed uses option nobreak mdframed on input line 430.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (5.37814pt too wide) in paragraph at lines 449--449
+Overfull \hbox (5.37814pt too wide) in paragraph at lines 447--447
  [][]\OT1/cmr/bx/n/10.95 Computational 
  []
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 451.
+ mdframed uses option nobreak mdframed on input line 449.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 451.
+ mdframed uses option nobreak mdframed on input line 449.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 466.
+ mdframed uses option nobreak mdframed on input line 464.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 466.
+ mdframed uses option nobreak mdframed on input line 464.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Overfull \hbox (21.76158pt too wide) in paragraph at lines 494--495
+Overfull \hbox (21.76158pt too wide) in paragraph at lines 492--493
  [] 
  []
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 495.
+ mdframed uses option nobreak mdframed on input line 493.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 495.
+ mdframed uses option nobreak mdframed on input line 493.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 523.
+ mdframed uses option nobreak mdframed on input line 521.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 523.
+ mdframed uses option nobreak mdframed on input line 521.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 552.
+ mdframed uses option nobreak mdframed on input line 550.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 552.
+ mdframed uses option nobreak mdframed on input line 550.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -911,16 +911,23 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 648.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 648.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2] [3] [4] [5] [6] [7] (./tikztest.aux) ) 
 Here is how much of TeX's memory you used:
- 18681 strings out of 480608
- 367641 string characters out of 5903630
- 961097 words of memory out of 5000000
- 34240 multiletter control sequences out of 15000+600000
- 536891 words of font info for 40 fonts, out of 8000000 for 9000
+ 18739 strings out of 480608
+ 368322 string characters out of 5903630
+ 963009 words of memory out of 5000000
+ 34297 multiletter control sequences out of 15000+600000
+ 537190 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,13n,71p,832b,1345s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/f
@@ -929,14 +936,15 @@ nts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2020/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/font
 s/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmtt9.pfb>
-Output written on tikztest.pdf (7 pages, 131944 bytes).
+type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmtt9.pfb>
+Output written on tikztest.pdf (7 pages, 141697 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 71 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

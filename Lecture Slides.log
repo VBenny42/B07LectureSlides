@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.17)  5 SEP 2021 19:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.2.17)  6 SEP 2021 17:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1400,12 +1400,12 @@ Overfull \hbox (40.09554pt too wide) in paragraph at lines 33--34
 [][] 
  []
 
-<Pictures/LITests.png, id=351, 276.03125pt x 143.53625pt>
-File: Pictures/LITests.png Graphic file (type png)
-<use Pictures/LITests.png>
-Package pdftex.def Info: Pictures/LITests.png  used on input line 53.
-(pdftex.def)             Requested size: 193.22055pt x 100.47467pt.
-) [33 <./Pictures/LITests.png>]
+
+Overfull \hbox (7.66847pt too wide) in paragraph at lines 85--86
+[][] 
+ []
+
+) [33]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
  (./Lecture Slides.aux)
@@ -1419,11 +1419,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 26427 strings out of 480608
- 502595 string characters out of 5903630
+ 26500 strings out of 480608
+ 503411 string characters out of 5903630
  1124133 words of memory out of 5000000
- 41607 multiletter control sequences out of 15000+600000
- 545065 words of font info for 69 fonts, out of 8000000 for 9000
+ 41681 multiletter control sequences out of 15000+600000
+ 545371 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,15n,76p,1025b,1597s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
@@ -1447,10 +1447,10 @@ ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive
 020/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb></usr/local/texlive/202
 0/texmf-dist/fonts/type1/public/cm-super/sfss1200.pfb></usr/local/texlive/2020/
 texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on "Lecture Slides.pdf" (34 pages, 1814359 bytes).
+Output written on "Lecture Slides.pdf" (34 pages, 1783037 bytes).
 PDF statistics:
- 458 PDF objects out of 1000 (max. 8388607)
+ 456 PDF objects out of 1000 (max. 8388607)
  370 compressed objects within 4 object streams
  147 named destinations out of 1000 (max. 500000)
- 179 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 174 words of extra memory for PDF output out of 10000 (max. 10000000)
 

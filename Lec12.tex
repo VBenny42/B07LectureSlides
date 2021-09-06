@@ -50,7 +50,39 @@
 				\end{itemize}
 			\end{minipage}
 			\begin{minipage}[t]{0.4\textwidth}
-				\includegraphics[scale=0.7]{LITests.png}
+%				\includegraphics[scale=0.7]{LITests.png}
+				\scalebox{0.7}{
+					\begin{tikzpicture}
+						%				\node[draw,	align=center, regular polygon,	regular polygon sides=3] {UI Tests};
+						\coordinate (A) at (0,1.3) {};
+						%				\node at (A) [above=1mm of A] {A};
+						\coordinate (B) at (1.9,0) {};
+						%				\node at (B) [above=1mm of B] {B};
+						\coordinate (C) at (-1.9,0) {};
+						%				\node at (C) [above=1mm of C] {C};
+						\draw[white, fill=MVPBlue] (C)--node [above, midway] {{\LARGE \textcolor{white}{UI Tests}}} (B)--(A)--cycle;
+
+						\coordinate (D) at ([yshift=0pt]C) {}; %%%%%%%%%%%%%%%%%yshift was -10pt
+						%				\node at (D) [above=1mm of D] {D};
+						\coordinate (E) at ([yshift=0pt]B) {};
+						%				\node at (E) [above=1mm of E] {E};
+						\coordinate (F) at ([yshift=-1.3cm, xshift=-1.8cm]D) {};
+						%				\node at (F) [above=1mm of F] {F};
+						\coordinate (G) at ([yshift=-1.3cm, xshift=1.8cm]E) {};
+						%				\node at (G) [above=1mm of G] {G};
+						\draw[white, fill=MVPBlue] (F) -- (D) -- (E) -- (G) --node [above, midway] {{\huge \textcolor{white}{Integration Tests}}} cycle;
+
+						\coordinate (H) at ([yshift=0pt]F) {};
+						%				\node at (H) [above=1mm of H] {H};
+						\coordinate (I) at ([yshift=0pt]G) {};
+						%				\node at (I) [above=1mm of I] {I};
+						\coordinate (J) at ([yshift=-1.3cm, xshift=-1.8cm]H) {};
+						%				\node at (J) [above=1mm of J] {J};
+						\coordinate (K) at ([yshift=-1.3cm, xshift=1.8cm]I) {};
+						%				\node at (K) [above=1mm of K] {K};
+						\draw[white, fill=MVPBlue] (J) -- node [above, midway] {{\huge \textcolor{white}{Unit Tests}}} (K) -- (I) -- (H) -- cycle;
+					\end{tikzpicture}
+				}
 			\end{minipage}
 		\end{itemize}
 
